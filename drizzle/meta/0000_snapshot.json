@@ -1,9 +1,25 @@
 {
-  "id": "90606927-fe20-4a77-b903-e525e7f5c77a",
+  "id": "a4df6b2c-8c0c-4057-9c57-23f76141dd9d",
   "prevId": "00000000-0000-0000-0000-000000000000",
   "version": "5",
   "dialect": "pg",
   "tables": {
+    "testTable": {
+      "name": "testTable",
+      "schema": "",
+      "columns": {
+        "qty": {
+          "name": "qty",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {}
+    },
     "users": {
       "name": "users",
       "schema": "",
@@ -22,6 +38,12 @@
         },
         "phone": {
           "name": "phone",
+          "type": "varchar(256)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "address": {
+          "name": "address",
           "type": "varchar(256)",
           "primaryKey": false,
           "notNull": false
