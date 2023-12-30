@@ -17,6 +17,7 @@ import {
 } from 'drizzle-orm/pg-core';
 
 export const moodEnum = pgEnum('mood', ['sad', 'ok', 'happy']);
+
 export const users = pgTable('users', {
   id: serial('id').primaryKey(),
   fullName: text('full_name'),
