@@ -3,16 +3,20 @@ import {
   bigserial,
   boolean,
   char,
+  date,
   decimal,
   doublePrecision,
-  json,
+  interval,
   jsonb,
+  pgEnum,
   pgTable,
   serial,
   text,
+  time,
   varchar,
 } from 'drizzle-orm/pg-core';
 
+export const moodEnum = pgEnum('mood', ['sad', 'ok', 'happy']);
 export const users = pgTable('users', {
   id: serial('id').primaryKey(),
   fullName: text('full_name'),
@@ -31,4 +35,8 @@ export const testTable = pgTable('testTable', {
   name: char('name', { length: 10 }), // "chair     " - 10 a string of characters total
   // data: json('data'),
   data: jsonb('data'), // with jsonb the js object will be converted to binary type
+  date: date('date', { mode: 'date' }).defaultNow(),
+  interval2: interval('interval2', { fields: 'day' }),
+  startAt: time('startAt', { precision: 0 }).defaultNow(),
+  mood: moodEnum('mood').default('ok'),
 });
