@@ -1,5 +1,5 @@
 import { db } from '@/db';
-import { users } from '@/db/schema';
+
 import {
   and,
   between,
@@ -28,6 +28,7 @@ export async function GET() {
   const result = await db.query.users.findFirst({
     with: {
       profile: true,
+      posts: true,
     },
   });
 
