@@ -14,3 +14,5 @@ pnpm dev
 2. Create `schema.ts` within `db` directory which is located at the root directory.
 3. Create `migrate.ts` within `db` directory.
 4. Create `index.ts` within `db` directory where the `Client` will be initiated.
+
+Reference: [Sakura Dev - Drizzle ORM Comprehensive Course](https://www.youtube.com/playlist?list=PLhnVDNT5zYN8PLdYddaU3jiZXeOyehhoU)
