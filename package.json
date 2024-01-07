@@ -12,6 +12,7 @@
     "db:migrate": "drizzle-kit generate:pg --schema=./db/schema.ts && node -r esbuild-register ./db/migrate.ts"
   },
   "dependencies": {
+    "@auth/drizzle-adapter": "^0.3.14",
     "dotenv": "^16.3.1",
     "drizzle-orm": "^0.29.2",
     "esbuild": "^0.19.10",

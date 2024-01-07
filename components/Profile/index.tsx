@@ -12,7 +12,7 @@ export default async function Profile({
 }) {
   return (
     <div className="flex justify-between">
-      <div>
+      <div className="text-lime-500">
         <h2 className="text-3xl font-semibold">{user.name}</h2>
         <div>{user.email}</div>
       </div>
