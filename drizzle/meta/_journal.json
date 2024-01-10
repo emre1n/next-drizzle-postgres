@@ -5,36 +5,8 @@
     {
       "idx": 0,
       "version": "5",
-      "when": 1703935877491,
-      "tag": "0000_broken_karma",
-      "breakpoints": true
-    },
-    {
-      "idx": 1,
-      "version": "5",
-      "when": 1704021266674,
-      "tag": "0001_unusual_hannibal_king",
-      "breakpoints": true
-    },
-    {
-      "idx": 2,
-      "version": "5",
-      "when": 1704052282063,
-      "tag": "0002_smiling_bromley",
-      "breakpoints": true
-    },
-    {
-      "idx": 3,
-      "version": "5",
-      "when": 1704106044801,
-      "tag": "0003_large_penance",
-      "breakpoints": true
-    },
-    {
-      "idx": 4,
-      "version": "5",
-      "when": 1704227342516,
-      "tag": "0004_friendly_falcon",
+      "when": 1704744589691,
+      "tag": "0000_perfect_shen",
       "breakpoints": true
     }
   ]
